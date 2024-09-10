@@ -1,6 +1,10 @@
 import { createContext, useEffect, useReducer, useContext } from "react";
 
-export const initialState = {theme: "", data: []}
+export const initialState = {theme: "", data: [], favorites: []};
+
+const favs = JSON.parse(localStorage.getItem("favorites"));
+
+if(favs) initialState.favorites = favs
 
 export const ContextGlobal = createContext(undefined);
 
@@ -13,9 +17,9 @@ const reducer = (state, action) => {
     case "SET_DATA":
       return { ...state, data: action.payload };
     case "ADD_FAVORITE":
-      return { ...state, data: [...state.data, action.payload]};
+      return { ...state, favorites: [...state.favorites, action.payload]};
     case "REMOVE_FAVORITE":
-      return { ...state, data: state.data.filter(dentist => dentist.id !== action.payload)}
+      return { ...state, favorites: state.favorites.filter(fav => fav.id !== action.payload.id)}
     default:
       return state;
   }
@@ -23,7 +27,7 @@ const reducer = (state, action) => {
 
 export const ContextProvider = ({ children }) => {
   //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo
-  
+
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const url = 'https://jsonplaceholder.typicode.com/users';

@@ -23,12 +23,12 @@ h1{
   text-align: center;
 }
 
-nav{
+/* nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 1rem;
-}
+  height: 60px;
+} */
 
 a{
   color: #000;
@@ -38,9 +38,9 @@ a{
 }
 a:hover{
   color: rgb(136, 136, 136);
-} 
+}
 
-footer {
+/* footer {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -50,7 +50,7 @@ footer {
   width: 90%;
   height: 40px;
   margin-top: 2rem;
-}
+} */
 
 footer > img{
   width: 200px;
@@ -78,6 +78,8 @@ form{
   width: 200px;
   padding: 0.5rem 0.5rem 0 0.5rem;
   border: 0.5px solid rgb(136, 136, 136);
+  height: 250px;
+  border-radius: 10px;
 }
 
 .card:hover{
@@ -117,6 +119,13 @@ tr:nth-child(even) {
   background-color: #12121296;
   color: white;
 }
+
 .dark > a {
   color: white;
+}
+
+/*Contact page*/
+
+.contact-page{
+  min-height: 75vh;
 }

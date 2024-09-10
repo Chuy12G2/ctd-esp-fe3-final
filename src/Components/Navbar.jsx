@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../css/navbar.css'
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
