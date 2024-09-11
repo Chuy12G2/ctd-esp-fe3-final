@@ -1,30 +1,36 @@
 import React from "react";
 import Card from "../Components/Card";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useGlobalContext } from "../Components/utils/global.context";
+import '../css/favs.css'
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
-
-let favs = JSON.parse(localStorage.getItem("favorites")) || [];
 
 const Favs = () => {
 
-  const { state } = useGlobalContext();
+  const [favsLocalStorage, setFavsLocalStorage] = useState([]);
 
+  const { state } = useGlobalContext();
+  
   useEffect(() => {
-    favs = JSON.parse(localStorage.getItem("favorites"))
-  }, [state])
+    const favs = JSON.parse(localStorage.getItem("favorites"));
+
+    if (favs) {
+      setFavsLocalStorage(favs);
+    }
+
+  }, []);
 
   return (
-    <>
+    <div className={`favs ${state.theme}`}>
       <h1>Dentists Favs</h1>
-      { favs && <div className="card-grid">
-        {favs.map((dentist) => (
+      { favsLocalStorage && <div className="card-grid">
+        {favsLocalStorage.map((dentist) => (
           <Card key={dentist.id} dentist={dentist} />
         ))}
       </div> }
 
-      { !favs && <h2>You haven't added any dentist to your favorites</h2> }
-    </>
+      { !favsLocalStorage && <h2>You haven't added any dentist to your favorites</h2> }
+    </div>
   );
 };
 

@@ -11,6 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .favButton{
   background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
@@ -21,14 +22,9 @@ code {
 
 h1{
   text-align: center;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
-
-/* nav{
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  height: 60px;
-} */
 
 a{
   color: #000;
@@ -36,26 +32,16 @@ a{
   margin: 5px;
   cursor: pointer;
 }
+
 a:hover{
   color: rgb(136, 136, 136);
 }
-
-/* footer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-  bottom: 0;
-  width: 90%;
-  height: 40px;
-  margin-top: 2rem;
-} */
 
 footer > img{
   width: 200px;
   margin: 0;
 }
+
 footer > p{
   margin: 0;
   padding-top: 0.7rem;
@@ -70,27 +56,13 @@ form{
   margin: 0 auto;
 }
 
-.card{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
-  height: 250px;
-  border-radius: 10px;
-}
 
-.card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
-}
 
 .card-grid{
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
-  width: 90vw;
+  width: 80vw;
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -102,7 +74,6 @@ table {
     width: 100%;
     display: table;
     border: 1px solid #ccc;
-
 }
 
 td, th {

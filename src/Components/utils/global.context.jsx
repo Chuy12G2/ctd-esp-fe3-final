@@ -1,6 +1,6 @@
 import { createContext, useEffect, useReducer, useContext } from "react";
 
-export const initialState = {theme: "", data: [], favorites: []};
+export const initialState = {theme: "light", data: [], favorites: []};
 
 const favs = JSON.parse(localStorage.getItem("favorites"));
 

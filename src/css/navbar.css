@@ -1,18 +1,22 @@
-nav{
+.navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1rem;
     height: 60px;
     align-items: center;
-    background-color: rgba(232, 218, 218, 0.116);
-    border-bottom: 4px solid rgb(153, 139, 139);
+    font-size: 20px;
+}
+
+.navbar > button {
+    border-radius: 7px;
+    font-weight: 700;
 }
 
 nav > a{
-    color: #000;
     text-decoration: none;
     margin: 5px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 nav > a:hover{
@@ -20,6 +24,34 @@ nav > a:hover{
 }
 
 nav > button{
-    padding: 10px;;
+    padding: 10px;
     cursor: pointer;
+}
+
+.dark-navbar{
+  background-color: #2e3532;
+  border-bottom: 3px solid #c7cedb;
+}
+
+.dark-navbar > a{
+  color: #c7cedb;
+}
+
+.dark-navbar > button{  
+  background-color: #c7cedb;
+  color: #2e3532;
+}
+
+.light-navbar{
+  background-color: #A3B0AE;
+  border-bottom: 3px solid #2e3532;
+}
+
+.light-navbar > a{
+  color: #2e3532;
+}
+
+.light-navbar > button{  
+  background-color: #2e3532;
+  color: #BEC5D1;
 }

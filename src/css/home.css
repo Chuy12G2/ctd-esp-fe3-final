@@ -1,0 +1,15 @@
+.home{
+  padding-bottom: 3rem;
+  
+}
+
+.dark-home{
+  background-color: #424C46;
+  color: white;
+}
+
+.light-home{
+  background-color: #C7CEDB;
+  color: black;
+}
+

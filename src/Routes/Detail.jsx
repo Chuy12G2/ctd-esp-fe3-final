@@ -9,8 +9,8 @@ import '../css/detail.css'
 const Detail = () => {
   const {id} = useParams();
 
-  const {theme} = useGlobalContext();
-
+  const { state } = useGlobalContext();  
+  
   const [dentist, setDentist] = useState({});
 
   const getDentist = () => {
@@ -29,7 +29,7 @@ const Detail = () => {
   }, [])
 
   return (
-    <div className='detail-page'>
+    <div className={`detail-page ${state.theme}-detail`}>
       <h1>Dentist' Details</h1>
       <h2>Name: {dentist.name}</h2>
       <h3>Email: {dentist.email}</h3>

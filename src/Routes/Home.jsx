@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../Components/Card'
+import '../css/home.css'
 
 import { useGlobalContext } from '../Components/utils/global.context'
 
@@ -7,9 +8,9 @@ import { useGlobalContext } from '../Components/utils/global.context'
 
 const Home = () => {
   const { state } = useGlobalContext()
-  console.log(state);
+  
   return (
-    <main className="" >
+    <main className={`home ${state.theme}-home`}>
       <h1>Home</h1>
       <div className='card-grid'>
        {state.data.map((dentist) => (

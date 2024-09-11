@@ -1,5 +1,4 @@
 .footer{
-    border-top: 4px solid rgb(153, 139, 139);
     justify-content: center;
     display: flex;
     justify-content: center;
@@ -9,5 +8,23 @@
     bottom: 0;
     width: 100%;
     height: 40px;
-    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer > p{
+    margin: 0;
+    padding: 7px 0;
+}
+
+.dark-footer{
+  background-color: #2e3532;
+  color: #c7cedb;
+  border-top: 3px solid #c7cedb;
+}
+
+.light-footer{
+  background-color: #A3B0AE;
+  color: #2e3532;
+  border-top: 3px solid #2e3532;
 }
