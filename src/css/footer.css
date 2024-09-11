@@ -12,6 +12,11 @@
     font-weight: 700;
 }
 
+.footer > img{
+  width: 200px;
+  margin: 0;
+}
+
 .footer > p{
     margin: 0;
     padding: 7px 0;

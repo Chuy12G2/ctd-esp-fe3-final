@@ -1,6 +1,7 @@
 .home{
-  padding-bottom: 3rem;
-  
+  min-height: 723px;
+  box-sizing: border-box;
+  padding-bottom: 1rem;
 }
 
 .dark-home{
@@ -12,4 +13,3 @@
   background-color: #C7CEDB;
   color: black;
 }
-

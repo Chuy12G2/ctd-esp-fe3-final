@@ -37,30 +37,10 @@ a:hover{
   color: rgb(136, 136, 136);
 }
 
-footer > img{
-  width: 200px;
-  margin: 0;
-}
-
-footer > p{
-  margin: 0;
-  padding-top: 0.7rem;
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 300px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-
 
 .card-grid{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   gap: 1rem;
   width: 80vw;
   height: auto;
@@ -84,19 +64,4 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
-}
-
-.dark{
-  background-color: #12121296;
-  color: white;
-}
-
-.dark > a {
-  color: white;
-}
-
-/*Contact page*/
-
-.contact-page{
-  min-height: 75vh;
 }

@@ -1,0 +1,65 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 723px;
+}
+
+.contact-page h2 {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+}
+
+.contact-page h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.dark-contact {
+    background-color: #424C46;
+    color: white;
+}
+
+.light-contact {
+    background-color: #C7CEDB;
+    color: black;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form input{
+    border: 2px solid rgb(136, 136, 136);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 12px 0;
+}
+
+.form label{
+    font-weight: 700;
+}
+
+.form button{
+    background-color: #c7cedb;
+    padding: 10px;
+    border: 2px solid rgb(136, 136, 136);
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.message{
+    margin-top: 1rem;
+    font-size: 18px;
+    color: #D84727;
+    font-weight: 700;
+    text-align: center;
+}

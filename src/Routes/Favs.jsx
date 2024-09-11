@@ -10,7 +10,10 @@ const Favs = () => {
   const [favsLocalStorage, setFavsLocalStorage] = useState([]);
 
   const { state } = useGlobalContext();
-  
+
+  console.log(favsLocalStorage);
+
+
   useEffect(() => {
     const favs = JSON.parse(localStorage.getItem("favorites"));
 
@@ -21,7 +24,7 @@ const Favs = () => {
   }, []);
 
   return (
-    <div className={`favs ${state.theme}`}>
+    <div className={`favs ${state.theme}-favs`}>
       <h1>Dentists Favs</h1>
       { favsLocalStorage && <div className="card-grid">
         {favsLocalStorage.map((dentist) => (
@@ -29,7 +32,7 @@ const Favs = () => {
         ))}
       </div> }
 
-      { !favsLocalStorage && <h2>You haven't added any dentist to your favorites</h2> }
+      { favsLocalStorage.length === 0 && <h2 className="no-favs">You haven't added any dentist to your favorites</h2> }
     </div>
   );
 };
