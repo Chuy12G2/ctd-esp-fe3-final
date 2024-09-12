@@ -16,6 +16,11 @@
   border: 3px solid black;
 }
 
+.card > img{
+  width: 140px;
+  border-radius: 8px;
+}
+
 .card > button{
   margin-top: 0.5rem;
   width: 80%;

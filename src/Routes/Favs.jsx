@@ -11,9 +11,6 @@ const Favs = () => {
 
   const { state } = useGlobalContext();
 
-  console.log(favsLocalStorage);
-
-
   useEffect(() => {
     const favs = JSON.parse(localStorage.getItem("favorites"));
 
@@ -21,7 +18,7 @@ const Favs = () => {
       setFavsLocalStorage(favs);
     }
 
-  }, []);
+  }, [state.favorites]);
 
   return (
     <div className={`favs ${state.theme}-favs`}>

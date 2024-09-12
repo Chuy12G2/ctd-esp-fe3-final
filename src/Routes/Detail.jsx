@@ -31,7 +31,9 @@ const Detail = () => {
   return (
     <div className={`detail-page ${state.theme}-detail`}>
       <h1>Dentist' Details</h1>
+      <img src="../../images/doctor.jpg" alt="dentist" />
       <h2>Name: {dentist.name}</h2>
+      <h3>Username: {dentist.username}</h3>
       <h3>Email: {dentist.email}</h3>
       <h3>Phone: {dentist.phone}</h3>
       <h3>Website: {dentist.website}</h3>
