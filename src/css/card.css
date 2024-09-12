@@ -10,10 +10,9 @@
   align-items: center;
   width: 210px;
   padding: 0.6rem;
-  border: 0.5px solid rgb(136, 136, 136);
+  border: 3px solid rgb(136, 136, 136);
   border-radius: 10px;
   margin: 0.5rem;
-  border: 3px solid black;
 }
 
 .card > img{
@@ -57,12 +56,13 @@
 }
 
 .light-card{
-  background-color: #AEF6C7;
+  background-color: #88CCF1;
   color: black;
+  border: 3px solid #3587A4;
 }
 
 .light-card > button{
-  background-color: #5B8266;
+  background-color: #3587A4;
   color: black;
 }
 
@@ -80,5 +80,5 @@
 }
 
 .light-card:hover{
-  border: 3px solid #424C46;
+  border: 3px solid #A5D6F1;
 }
